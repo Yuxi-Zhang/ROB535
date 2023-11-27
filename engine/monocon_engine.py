@@ -141,7 +141,7 @@ class MonoconEngine(BaseEngine):
         eval_dict = self.test_dataset.evaluate(eval_container,
                                                eval_classes=['Pedestrian', 'Cyclist', 'Car'],
                                                verbose=True)
-        
+        # print(eval_dict)
         if cvt_flag:
             self.model.train()
             tprint("Model is converted to train mode.")
