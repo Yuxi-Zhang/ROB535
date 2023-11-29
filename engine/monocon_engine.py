@@ -138,7 +138,7 @@ class MonoconEngine(BaseEngine):
             
             for field in ['img_bbox', 'img_bbox2d']:
                 eval_container[field].extend(eval_results[field])
-        print(eval_results['img_bbox2d'])
+        #print(eval_results['img_bbox2d'])
         eval_dict = self.test_dataset.evaluate(eval_container,
                                                eval_classes=['Pedestrian', 'Cyclist', 'Car'],
                                                verbose=True)
